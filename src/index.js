@@ -41,11 +41,11 @@ function createNewRamen(event){
   event.preventDefault();
   const form = event.target;
   const newRamen = {
-    name: form.name,
-    resturant: form.resturant,
-    image: form.image,
-    rating: form.rating,
-    comment: form.comment,
+    name: form.name.value,
+    resturant: form.resturant.value,
+    image: form.image.value,
+    rating: form.rating.value,
+    comment: form.comment.value,
 };
 renderRamenImage(newRamen)
 }
